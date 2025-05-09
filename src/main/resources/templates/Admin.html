@@ -1,0 +1,6 @@
+<h2>Admin-sida</h2>
+<div th:each="doc : ${documents}">
+    <h3 th:text="${doc.title}"></h3>
+    <p th:text="${doc.description}"></p>
+</div>
+<a th:href="@{/}">Hem</a>

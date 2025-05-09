@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Manager-sida</title>
+</head>
+<body>
+<h1>Manager Dashboard</h1>
+
+<!-- Iterera över listan infos som kontroller lagt in -->
+<div th:each="info : ${infos}">
+    <h2 th:text="${info.title}">Titel här</h2>
+    <p th:text="${info.infoText}">Info-text här</p>
+</div>
+
+<nav>
+    <a th:href="@{/}">Hem</a> |
+    <a th:href="@{/user}">User</a> |
+    <a th:href="@{/admin}">Admin</a> |
+    <a th:href="@{/logout}">Logga ut</a>
+</nav>
+</body>
+</html>

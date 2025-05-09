@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1 th:text="${message}"></h1>
+<nav>
+    <a th:href="@{/user}">User</a> |
+    <a th:href="@{/admin}">Admin</a> |
+    <a th:href="@{/manager}">Manager</a> |
+    <a th:href="@{/logout}">Logga ut</a>
+</nav>
+</body>
+</html>
+
