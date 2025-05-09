@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("message", "Du är inloggad!");
+        model.addAttribute("message", "Du är inloggad fill Farids hemsida!");
         return "home";
     }
 }
